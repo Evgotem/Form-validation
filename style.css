@@ -1,0 +1,54 @@
+body {
+  background: #2F363D;
+}
+
+input {
+  border-radius: 4px;
+  padding: 2px;
+  outline: none;
+}
+
+.school-form {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.school-form > * {
+  margin: 20px 0;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  border: 0;
+  gap: 10px 0;
+  justify-items: end;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+
+.password {
+  position: relative;
+}
+
+.eye, 
+.eye-slash {
+  position: absolute;
+  padding: 4px;
+  right: 0;
+  width: 18px;
+}
+
+.eye {
+  height: 14px;
+}
+
+.hidden {
+  display: none;
+}

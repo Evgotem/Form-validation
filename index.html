@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<form class="school-form" action="./result" method="POST" id="telegram-register">
+			<legend>Please, register to Telegram</legend>
+
+			<fieldset class="questions">
+				<label for="name-input">Enter Name:</label>
+				<input type="text" id="name-input" required>
+
+				<label for="email-input">Enter Email:</label>
+				<input type="email" id="email-input" required>
+
+				<label for="password-input">Enter Password:</label>
+        <div class="password">
+          <input type="password" name="password" class="password-input" id="password-input" required>
+          <img class="eye hidden" id="eye" src="./svg/eye.svg" alt="hide password">
+          <img class="eye-slash" id="eye-slash" src="./svg/eye-slash.svg" alt="show password">
+        </div>
+
+				<label for="confirm-password-input">Confirm Password:</label>
+        <div class="password">
+          <input type="password" name="confirm-password-input" class="password-input" id="confirm-password-input" required>
+          <img class="eye hidden" id="eye" src="./svg/eye.svg" alt="hide password">
+          <img class="eye-slash" id="eye-slash" src="./svg/eye-slash.svg" alt="show password">
+        </div>
+
+				<label for="country-select">Select your country:</label>
+				<select type="" id="country-select">
+          <option value="Belarus">Belarus</option>
+          <option value="Russia">Russia</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="USA">USA</option>
+        </select>
+
+				<label for="language-select">Select language:</label>
+				<input list="languages" id="language-select" required>
+        <datalist id="languages">
+          <option value="Russian">
+          <option value="English">
+        </datalist>
+
+        <label for="background-select">Select Background color</label>
+				<input type="color" id="background-select" />
+
+				<input type="checkbox" id="accept" required />
+        <label for="accept">Accept terms and services</label>
+
+			</fieldset>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+
+      <div id="result"></div>
+		</form>
+
+
+		<script src="./script.js"></script>
+	</body>
+</html>
