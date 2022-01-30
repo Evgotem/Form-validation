@@ -1,5 +1,8 @@
-# Практическая работа по валидации формы
+# Practical work on form validation
 
-Пароль должен содержать минимум 8 символов, 1 заглавную букву и 1 цифру
+The password should contain at least 8 characters, 1 capital letter and 1 number
 
-[Посмотреть на Github pages](https://evgotem.github.io/Form-validation/)
+[Github pages link](https://evgotem.github.io/Form-validation/)
+
+![validation](https://user-images.githubusercontent.com/57010853/151709120-dbb8639a-7f03-4069-b223-185e5eae1773.jpg)
+
